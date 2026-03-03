@@ -81,7 +81,7 @@ public struct ControllerSkin: ControllerSkinProtocol
         do
         {
             let archive = try Archive(url: fileURL, accessMode: .read)
-            self.archive = archive
+            self.archive = archive!
         }
         catch
         {
